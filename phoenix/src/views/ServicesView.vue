@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="Services">
     <NavBar />
     <h1>This is an about page</h1>
   </div>
@@ -9,7 +9,7 @@
 import NavBar from "@/components/NavBar.vue";
 
 export default {
-  name: "AboutView",
+  name: "ServicesView",
   components: {
     NavBar,
   },

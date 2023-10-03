@@ -5,7 +5,7 @@
     </div>
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'services' }">Services</router-link>
       <!-- Add more links here as needed -->
     </nav>
   </div>
