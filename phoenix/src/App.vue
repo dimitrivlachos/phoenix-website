@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 1.2em;
 }
 
 #app {

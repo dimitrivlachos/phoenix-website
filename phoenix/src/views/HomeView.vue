@@ -8,7 +8,7 @@
         class="responsive-image"
       />
     </div>
-    <HomeContent msg="Phoenix Storage" />
+    <HomeContent msg="Phoenix Storage Solutions" />
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 }
 
 .responsive-image {
-  max-width: 50%;
+  max-width: 25%;
   height: auto;
 }
 </style>

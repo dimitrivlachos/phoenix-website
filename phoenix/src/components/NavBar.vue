@@ -5,7 +5,8 @@
     </div>
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link :to="{ name: 'services' }">Services</router-link>
+      <router-link :to="{ name: 'services' }">Services</router-link> |
+      <router-link :to="{ name: 'contact' }">Contact</router-link>
       <!-- Add more links here as needed -->
     </nav>
   </div>
@@ -63,5 +64,12 @@ nav a.router-link-exact-active {
   border-radius: 4px;
   padding: 0.5em;
   text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 900px) {
+  nav {
+    font-size: 4vw; /* Reduce font size for smaller screens */
+  }
 }
 </style>
