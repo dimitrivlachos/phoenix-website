@@ -1,6 +1,13 @@
 <template>
   <div class="home">
-    <NavBar />
+    <NavBar :display_logo="false" />
+    <div class="imgbk">
+      <img
+        alt="Phoenix Logo"
+        src="@/assets/Phoenix_logo.jpg"
+        class="responsive-image"
+      />
+    </div>
     <HomeContent msg="Phoenix Storage" />
   </div>
 </template>
@@ -18,3 +25,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.imgbk {
+  background-color: #1a4589;
+  padding: 0px;
+}
+
+.responsive-image {
+  max-width: 50%;
+  height: auto;
+}
+</style>
