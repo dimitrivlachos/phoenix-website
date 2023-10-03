@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="logo">
-      <img alt="Phoenix Logo" src="@/assets/Phoenix_logo.jpg" />
+      <img v-if="display_logo" alt="Phoenix Logo" src="@/assets/Phoenix_logo.jpg" />
     </div>
     <nav>
       <router-link to="/">Home</router-link> |
@@ -13,6 +13,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      display_logo: true, // Set to false to hide the logo
+    };
+  },
   name: "NavBar",
 };
 </script>
