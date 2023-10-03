@@ -9,6 +9,7 @@
       />
     </div>
     <HomeContent msg="Phoenix Storage Solutions" />
+    <FooterBar />
   </div>
 </template>
 
@@ -16,12 +17,14 @@
 // @ is an alias to /src
 import HomeContent from "@/components/HomeContent.vue";
 import NavBar from "@/components/NavBar.vue";
+import FooterBar from "@/components/FooterBar.vue";
 
 export default {
   name: "HomeView",
   components: {
     NavBar,
     HomeContent,
+    FooterBar,
   },
 };
 </script>
