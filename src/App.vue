@@ -1,20 +1,19 @@
 <template>
-  <router-view />
+  <div id="app">
+    <img alt="Phoenix Logo" src="./assets/Phoenix_logo.png" />
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link :to="{ name: 'about' }">About</router-link>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 1.2em;
-}
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+</script>
+
+<style scoped>
+  
 </style>
