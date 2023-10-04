@@ -1,18 +1,42 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar :display_logo="false" />
+    <div class="imgbk">
+      <img
+        alt="Phoenix Logo"
+        src="@/assets/Phoenix_logo.jpg"
+        class="responsive-image"
+      />
+    </div>
+    <HomeContent msg="Phoenix Storage Solutions" />
+    <FooterBar />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeContent from "@/components/HomeContent.vue";
+import NavBar from "@/components/NavBar.vue";
+import FooterBar from "@/components/FooterBar.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    HomeContent,
+    FooterBar,
+  },
+};
 </script>
+
+<style scoped>
+.imgbk {
+  background-color: #1a4589;
+  padding: 0px;
+}
+
+.responsive-image {
+  max-width: 25%;
+  height: auto;
+}
+</style>
