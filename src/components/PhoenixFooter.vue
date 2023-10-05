@@ -11,7 +11,7 @@
                         <RouterLink :to="{ name: 'home' }" class="mr-4 hover:underline md:mr-6 ">Home</RouterLink>
                     </li>
                     <li>
-                        <a href="/Phoenix6018 Rental Agreement.pdf" class="mr-4 hover:underline md:mr-6 ">Rental Agreement</a>
+                        <a href="/files/Phoenix6018 Rental Agreement.pdf" class="mr-4 hover:underline md:mr-6 ">Rental Agreement</a>
                     </li>
                     <li>
                         <router-link :to="{ name: 'contact' }" class="hover:underline">Contact Us</router-link>

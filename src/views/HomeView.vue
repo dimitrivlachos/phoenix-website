@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- First Section with Image Background -->
-    <section class="relative bg-cover bg-center h-80 md:h-96" style="background-image: url('/UnitsWithVan.png');">
+    <section class="relative bg-cover bg-center h-80 md:h-96" :style="{ backgroundImage: 'url(' + image + ')' }">
       <!-- Transparent Grey Overlay -->
       <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
 
@@ -41,7 +41,7 @@
 
             <br />
             <div class="mt-6">
-              <a href="/Phoenix6018 Rental Agreement.pdf"
+              <a href="/files/Phoenix6018 Rental Agreement.pdf" target="_blank"
                 class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
                 Download Rental Agreement
               </a>
@@ -65,3 +65,15 @@
     </section>
   </div>
 </template>
+
+<script>
+  import image from "@/assets/UnitsWithVan.png"
+    
+    export default {
+        data: function () {
+            return {
+                image: image
+            }
+        }
+    }
+</script>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Section 1: Map of Location -->
-        <section class="relative bg-cover bg-center p-4" style="background-image: url('/UnitsWithVan.png');">
+        <section class="relative bg-cover bg-center p-4" :style="{ backgroundImage: 'url(' + image + ')' }">
             <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
             <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center pb-4">Where to find us</h1>
             <!-- Flex container to center the map -->
@@ -41,6 +41,7 @@
 </template>
   
 <script>
+import image from "@/assets/UnitsWithVan.png";
 import ContactForm from "@/components/ContactForm.vue";
 
 export default {
@@ -49,6 +50,7 @@ export default {
     },
     data() {
         return {
+            image: image,
             people: [
                 {
                     name: 'Scott McNeilage',
