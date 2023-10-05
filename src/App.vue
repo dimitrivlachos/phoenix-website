@@ -35,11 +35,14 @@
     <div class="flex-1">
       <router-view />
     </div>
+
+    <phoenix-footer />
   </div>
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import PhoenixFooter from '@/components/PhoenixFooter.vue'
 
 </script>
 
