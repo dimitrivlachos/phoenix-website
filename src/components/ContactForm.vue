@@ -1,10 +1,9 @@
 <template>
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="bg-white p-8 shadow-md rounded-md w-full md:w-1/2">
+        <div class="bg-white p-8 shadow-md rounded-md w-full md:w-1/2 my-4">
             <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
 
             <!-- Form -->
-            <form @submit.prevent="submitForm">
+            <form @submit.prevent="submitForm" class="mt-0"> <!-- Remove top margin -->
                 <!-- Name Input -->
                 <div class="mb-4">
                     <label for="name" class="block text-gray-700 font-semibold">Name</label>
@@ -38,7 +37,6 @@
                 </div>
             </form>
         </div>
-    </div>
 </template>
   
 <script>
@@ -60,4 +58,3 @@ export default {
     },
 };
 </script>
-  
