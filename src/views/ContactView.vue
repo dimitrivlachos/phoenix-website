@@ -1,22 +1,74 @@
 <template>
-  <div class="Contact">
-    <NavBar />
-    <h1>This is a contact page</h1>
-  </div>
-  <FooterBar />
-</template>
+    <div>
+        <!-- Section 1: Map of Location -->
+        <section class="relative bg-cover bg-center p-4" style="background-image: url('/UnitsWithVan.png');">
+            <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
+            <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center pb-4">Where to find us</h1>
+            <!-- Flex container to center the map -->
+            <div class="flex items-center justify-center z-10 relative">
+                <!-- Place your map component or image here -->
+                <div class="text-center">
+                    <!-- Example: Google Maps Embed -->
+                    <iframe class="border-4 border-gray-800 rounded-md"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt8Z_5xZwlR4RY3_Gqtq7oUk&key=AIzaSyByhNS7f8tv2TpDukN0leRmlvPOtBdM-f0"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section 2: Contact Form -->
+        <section class="bg-gray-200 shadow-md rounded-md">
+            <div class="flex items-center justify-center"> <!-- Center the contact form -->
+                <ContactForm />
+            </div>
+        </section>
+
+        <!-- Section 3: Contact Details -->
+        <section class="bg-white p-4">
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold mb-4">Contact Details</h2>
+          <!-- List of contact details using v-for loop -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div v-for="(person, index) in people" :key="index" class="bg-gray-100 p-4 rounded-md">
+              <strong>Name:</strong> {{ person.name }}<br />
+              <strong>Phone:</strong> {{ person.number }}<br />
+              <strong>Email:</strong> {{ person.email }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</template>
+  
 <script>
-import NavBar from "@/components/NavBar.vue";
-import FooterBar from "@/components/FooterBar.vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
-  name: "ContactView",
-  components: {
-    NavBar,
-    FooterBar,
-  },
+    components: {
+        ContactForm,
+    },
+    data() {
+        return {
+            people: [
+                {
+                    name: 'Scott McNeilage',
+                    number: '+26 (0)377 759 3979 (Zimbabwe)',
+                    email: 'office@phoenix6018.co.za',
+                },
+                {
+                    name: 'Angelo Vlachos',
+                    number: '+27 (0)82 770 8949 (South Africa)',
+                    email: 'office@phoenix6018.co.za',
+                },
+                {
+                    name: 'Angela Vlachos',
+                    number: '+27 (0)82 574 6516 (South Africa)',
+                    email: 'office@phoenix6018.co.za',
+                }
+                // Add more people objects as needed
+            ],
+        };
+    },
 };
 </script>
-
-<style scoped></style>
+  

@@ -1,20 +1,20 @@
 <template>
-  <router-view />
+  <div id="app" class="flex flex-col h-screen">
+    <!-- Navigation -->
+    <phoenix-header />
+
+    <!-- Page contents -->
+    <div class="flex-1">
+      <router-view />
+    </div>
+
+    <phoenix-footer />
+  </div>
 </template>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 1.2em;
-}
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import PhoenixHeader from '@/components/PhoenixHeader.vue'
+import PhoenixFooter from '@/components/PhoenixFooter.vue'
+</script>
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>
