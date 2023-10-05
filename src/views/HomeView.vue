@@ -18,7 +18,7 @@
           <div class="md:w-1/2 p-6">
             <h2 class="text-2xl font-semibold">Why Choose Phoenix Storage Solutions?</h2>
             <p class="mt-4 text-gray-700">
-              Just like a Phoenix, we are breathing new life into storage solutions. Here at Phoenix, we understand 
+              Just like a Phoenix, we are breathing new life into storage solutions. Here at Phoenix, we understand
               that your possessions hold sentimental and practical value.
               That's why we offer a diverse range of storage options tailored to your unique requirements.
               Whether it's your cherished furniture seeking refuge or your trusty vehicle in need of a safe haven,
@@ -26,7 +26,7 @@
             </p>
             <p class="mt-4 text-gray-700">
               We're not just a storage facility; we're your partner in safeguarding what matters most to you.
-              Our facility and attentive staff ensure your items stay in pristine condition. You can trust us to keep your 
+              Our facility and attentive staff ensure your items stay in pristine condition. You can trust us to keep your
               treasures safe and sound, just like a phoenix guarding its nest.
             </p>
           </div>
@@ -38,10 +38,11 @@
               for household furniture to secure garages for your vehicles, Phoenix Storage Solutions is your one-stop
               destination.
             </p>
-            
+
             <br />
             <div class="mt-6">
-              <a href="/Phoenix6018 Rental Agreement.pdf" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+              <a href="/Phoenix6018 Rental Agreement.pdf"
+                class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
                 Download Rental Agreement
               </a>
             </div>
@@ -49,7 +50,7 @@
         </div>
       </section>
 
-      <section class="bg-gray-800 text-white py-8 absolute bottom-0 w-full">
+      <!-- <section class="bg-gray-800 text-white py-8 absolute bottom-0 w-full">
         <div class="container mx-auto">
           <h2 class="text-3xl font-semibold text-center">
             <RouterLink to="/contact" class="hover:text-gray-400">Contact Us Today</RouterLink>
@@ -60,13 +61,7 @@
             belongings find their own phoenix nest with us.
           </p>
         </div>
-      </section>
-
+      </section> -->
     </section>
   </div>
 </template>
-
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-
-</script>
