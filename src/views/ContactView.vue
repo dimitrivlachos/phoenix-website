@@ -3,6 +3,7 @@
         <!-- Section 1: Map of Location -->
         <section class="relative bg-cover bg-center p-4" style="background-image: url('/UnitsWithVan.png');">
             <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
+            <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center pb-4">Where to find us</h1>
             <!-- Flex container to center the map -->
             <div class="flex items-center justify-center z-10 relative">
                 <!-- Place your map component or image here -->
@@ -36,11 +37,6 @@
           </div>
         </div>
       </section>
-
-        <!-- Extra Section for Scrolling -->
-        <section class="bg-gray-200 p-4 mt-4">
-            <!-- Add content for the extra section here -->
-        </section>
     </div>
 </template>
   
