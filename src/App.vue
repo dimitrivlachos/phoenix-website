@@ -7,8 +7,20 @@
         <img src="./assets/Phoenix_logo.png" alt="Logo" class="h-8 w-8 mr-2" />
       </div>
       <div class="flex items-center text-2xl">
-        <router-link to="/" class="mx-2">Home</router-link> |
-        <router-link :to="{ name: 'about' }" class="mx-2">About</router-link>
+        <router-link
+          to="/"
+          class="mx-2 px-4 py-2 border rounded-md text-white border-white hover:bg-white hover:text-gray-800"
+          active-class="bg-white text-gray-800"
+        >
+          Home
+        </router-link>
+        <router-link
+          :to="{ name: 'about' }"
+          class="mx-2 px-4 py-2 border rounded-md text-white border-white hover:bg-white hover:text-gray-800"
+          active-class="bg-white text-gray-800"
+        >
+          About
+        </router-link>
       </div>
 
       <!-- Title on the right -->
