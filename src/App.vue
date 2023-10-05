@@ -6,6 +6,8 @@
       <div class="flex items-left">
         <img src="./assets/Phoenix_logo.png" alt="Logo" class="h-8 w-8 mr-2" />
       </div>
+
+      <!-- Links in the middle -->
       <div class="flex items-center text-2xl">
         <router-link
           to="/"
@@ -24,7 +26,7 @@
       </div>
 
       <!-- Title on the right -->
-      <div class="text-xl font-bold">
+      <div class="text-4xl font-bold font-serif">
         <h1>Phoenix Storage</h1>
       </div>
     </nav>
