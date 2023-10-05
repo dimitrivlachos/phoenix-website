@@ -11,7 +11,7 @@
                         <RouterLink :to="{ name: 'home' }" class="mr-4 hover:underline md:mr-6 ">Home</RouterLink>
                     </li>
                     <li>
-                        <p @click="downloadAgreement" class="mr-4 hover:underline md:mr-6 cursor-pointer">Rental Agreement</p>
+                        <a :href="agreementUrl" class="mr-4 hover:underline md:mr-6 cursor-pointer">Rental Agreement</a>
                     </li>
                     <li>
                         <router-link :to="{ name: 'contact' }" class="hover:underline">Contact Us</router-link>
@@ -32,9 +32,14 @@
         components: {
             RouterLink,
         },
-        methods: {
-            downloadAgreement() {
-                window.open('/files/Phoenix6018 Rental Agreement.pdf', '_blank');
+        data: function () {
+            return {
+                agreement: 'Phoenix6018 Rental Agreement.pdf'
+            }
+        },
+        computed: {
+            agreementUrl: function () {
+                return window.location.origin + '/files/' + this.agreement;
             }
         }
     }
