@@ -17,11 +17,11 @@
           Home
         </router-link>
         <router-link
-          :to="{ name: 'about' }"
+          :to="{ name: 'contact' }"
           class="mx-2 px-4 py-2 border rounded-md text-white border-white hover:bg-white hover:text-gray-800"
           active-class="bg-white text-gray-800"
         >
-          About
+          Contact
         </router-link>
       </div>
 
