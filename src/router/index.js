@@ -13,6 +13,12 @@ const routes = [
     name: "contact",
     component: ContactView,
   },
+  // Catch all 404 - define at the very end
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: () => import("../views/404.vue"), // Lazy load
+  },
 ];
 
 const router = createRouter({
