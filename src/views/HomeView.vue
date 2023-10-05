@@ -38,6 +38,13 @@
               for household furniture to secure garages for your vehicles, Phoenix Storage Solutions is your one-stop
               destination.
             </p>
+            
+            <br />
+            <div class="mt-6">
+              <a href="/Phoenix6018 Rental Agreement.pdf" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+                Download Rental Agreement
+              </a>
+            </div>
           </div>
         </div>
       </section>
