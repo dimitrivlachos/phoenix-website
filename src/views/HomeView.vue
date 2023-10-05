@@ -41,7 +41,7 @@
 
             <br />
             <div class="mt-6">
-              <a href="/files/Phoenix6018 Rental Agreement.pdf" target="_blank"
+              <a @click="downloadAgreement" target="_blank"
                 class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
                 Download Rental Agreement
               </a>
@@ -73,6 +73,11 @@
         data: function () {
             return {
                 image: image
+            }
+        },
+        methods: {
+            downloadAgreement() {
+                window.open('/files/Phoenix6018 Rental Agreement.pdf', '_blank');
             }
         }
     }
