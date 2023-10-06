@@ -41,7 +41,7 @@
 
             <br />
             <div class="mt-6">
-              <a :href="agreementUrl"
+              <a @click="downloadLegal"
                 class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
                 Download Rental Agreement
               </a>
@@ -80,6 +80,12 @@
             agreementUrl: function () {
                 return window.location.origin + '/files/' + this.agreement;
             }
+        },
+        methods: {
+          downloadLegal () {
+            const url = this.agreementUrl;
+            window.open(url, '_blank');
+          }
         }
     }
 </script>

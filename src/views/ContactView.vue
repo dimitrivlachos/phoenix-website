@@ -3,14 +3,15 @@
         <!-- Section 1: Map of Location -->
         <section class="relative bg-cover bg-center p-4" :style="{ backgroundImage: 'url(' + image + ')' }">
             <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
-            <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center pb-4">Where to find us</h1>
+            <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center">Where to find us</h1>
+            <p class="text-white z-10 relative text-center  pb-4">Blue Hills, Midrand</p>
             <!-- Flex container to center the map -->
             <div class="flex items-center justify-center z-10 relative">
                 <!-- Place your map component or image here -->
                 <div class="text-center">
                     <!-- Example: Google Maps Embed -->
                     <iframe class="border-4 border-gray-800 rounded-md"
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt8Z_5xZwlR4RY3_Gqtq7oUk&key=AIzaSyByhNS7f8tv2TpDukN0leRmlvPOtBdM-f0"
+                        src="https://www.google.com/maps/embed/v1/view?zoom=14&center=-25.9474%2C28.0918&key=AIzaSyByhNS7f8tv2TpDukN0leRmlvPOtBdM-f0"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
