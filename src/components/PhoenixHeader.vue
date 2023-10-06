@@ -2,8 +2,12 @@
     <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center">
-                <img src="@/assets/Phoenix_logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Phoenix</span>
+                <div class="logo-container bg-gray-800 dark:bg-none p-2 rounded-lg">
+                    <img src="@/assets/Phoenix_logo.png" class="h-8" alt="Phoenix Logo" />
+                </div>
+                <div class="flex items-center ml-3">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Phoenix</span>
+                </div>
             </a>
             <button @click="toggleMenu" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
