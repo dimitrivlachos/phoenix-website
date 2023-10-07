@@ -17,7 +17,7 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-            <div :class="{ 'hidden': !isMenuOpen, 'w-full': isMenuOpen }" id="navbar-solid-bg">
+            <div :class="{ 'hidden md:block': !isMenuOpen, 'w-full': isMenuOpen }">
                 <ul
                     class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
