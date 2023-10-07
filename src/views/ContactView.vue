@@ -4,7 +4,7 @@
         <section class="relative bg-cover bg-center p-4" :style="{ backgroundImage: 'url(' + image + ')' }">
             <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
             <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center">Where to find us</h1>
-            <p class="text-white z-10 relative text-center  pb-4">Blue Hills, Midrand</p>
+            <p class="text-white z-10 relative text-center p-4 font-bold">Blue Hills, Midrand</p>
             <!-- Flex container to center the map -->
             <div class="flex items-center justify-center z-10 relative">
                 <!-- Place your map component or image here -->
@@ -30,7 +30,7 @@
           <h2 class="text-2xl font-semibold mb-4">Contact Details</h2>
           <!-- List of contact details using v-for loop -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div v-for="(person, index) in people" :key="index" class="bg-gray-100 p-4 rounded-md">
+            <div v-for="(person, index) in people" :key="index" class="bg-gray-800 text-white p-4 rounded-md">
               <strong>Name:</strong> {{ person.name }}<br />
               <strong>Phone:</strong> {{ person.number }}<br />
               <strong>Email:</strong> {{ person.email }}
