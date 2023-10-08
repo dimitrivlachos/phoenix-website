@@ -7,7 +7,7 @@
 
       <!-- Centered Content -->
       <div class="absolute inset-0 flex items-center justify-center">
-        <h1 class="text-3xl md:text-5xl text-white font-bold uppercase">Phoenix Storage Solutions</h1>
+        <h1 class="text-3xl text-center md:text-5xl text-white font-bold uppercase">Phoenix Storage Solutions</h1>
       </div>
     </section>
 
