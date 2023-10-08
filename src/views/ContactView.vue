@@ -42,7 +42,7 @@
 </template>
   
 <script>
-import image from "@/assets/gallery/UnitsWithVan.png";
+import image from "@/assets/UnitsWithVan.png";
 import ContactForm from "@/components/ContactForm.vue";
 
 export default {
