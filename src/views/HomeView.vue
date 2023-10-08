@@ -67,7 +67,7 @@
 </template>
 
 <script>
-  import image from "@/assets/UnitsWithVan.png"
+  import image from "@/assets/gallery/UnitsWithVan.png"
     
     export default {
         data: function () {
