@@ -1,5 +1,7 @@
 <template>
   <div>
+    <image-modal :image="selectedImage" v-if="selectedImage" @close="selectedImage = null" />
+
     <!-- First Section with Image Background -->
     <section class="relative bg-cover bg-center h-80 md:h-96" :style="{ backgroundImage: 'url(' + image + ')' }">
       <!-- Transparent Grey Overlay -->
@@ -45,9 +47,9 @@
     <section class="bg-white text-center">
       <h2 class="text-2xl font-semibold">Gallery</h2>
       <div class="container mx-auto mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" v-if="imageUrls.length > 0">
           <!-- Use v-for to loop through imageUrls -->
-          <div v-for="(imageUrl, index) in imageUrls" :key="index">
+          <div v-for="(imageUrl, index) in imageUrls" :key="index" @click="openModal(imageUrl)">
             <div class="border rounded-lg p-2 ease-in-out hover:scale-105 cursor-pointer">
               <img :src="imageUrl" alt="Gallery Image" class="w-full h-auto" />
             </div>
@@ -61,13 +63,19 @@
 
 <script>
 import image from "@/assets/UnitsWithVan.png"
+import ImageModal from "@/components/ImageModal.vue"
 
 export default {
+  components: {
+    ImageModal
+  },
   data: function () {
     return {
       image: image,
       agreement: 'Phoenix6018 Rental Agreement.pdf',
-      imageUrls: []
+      imageUrls: [],
+      selectedImage: null,
+      isModalOpen: false,
     }
   },
   computed: {
@@ -79,7 +87,11 @@ export default {
     downloadLegal() {
       const url = this.agreementUrl;
       window.open(url, '_blank');
-    }
+    },
+    openModal(imageUrl) {
+      this.selectedImage = imageUrl;
+      this.isModalOpen = true;
+    },
   },
   mounted() {
     // Get all images from the gallery folder
