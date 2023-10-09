@@ -52,7 +52,7 @@
         </div>
       </section>
       <div class="mt-6">
-        <a @click="downloadLegal" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer">
+        <a @click="openUrl(this.agreementUrl)" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer">
           Download Rental Agreement
         </a>
       </div>
@@ -104,10 +104,6 @@ export default {
     }
   },
   methods: {
-    downloadLegal() {
-      const url = this.agreementUrl;
-      window.open(url, '_blank');
-    },
     openUrl(url) {
       window.open(url, '_blank');
     },

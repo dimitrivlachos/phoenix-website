@@ -18,7 +18,7 @@
                             <RouterLink :to="{ name: 'home' }" class="mr-4 hover:underline md:mr-6 ">Home</RouterLink>
                         </li>
                         <li>
-                            <a :href="agreementUrl" class="mr-4 hover:underline md:mr-6 cursor-pointer">Rental Agreement</a>
+                            <a @click="downloadLegal" class="mr-4 hover:underline md:mr-6 cursor-pointer">Rental Agreement</a>
                         </li>
                         <li>
                             <router-link :to="{ name: 'contact' }" class="hover:underline">Contact Us</router-link>
