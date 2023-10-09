@@ -47,7 +47,7 @@
     <section class="bg-white text-center">
       <h2 class="text-2xl font-semibold">Gallery</h2>
       <div class="container mx-auto mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" v-if="imageUrls.length > 0">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" v-if="imageUrls.length > 0">
           <!-- Use v-for to loop through imageUrls -->
           <div v-for="(imageUrl, index) in imageUrls" :key="index" @click="openModal(imageUrl)">
             <div class="border rounded-lg p-2 ease-in-out hover:scale-105 cursor-pointer">
