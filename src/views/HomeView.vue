@@ -33,7 +33,21 @@
             <p class="mt-4 text-gray-700">
               Our units are 4m x 4m in size, with a 2m high ceiling. This means you get 16m<sup>2</sup> of storage space.
             </p>
-
+            <br>
+            <h2 class="text-2xl font-semibold">Follow Us!</h2>
+            <!-- Instagram Logo -->
+            <div class="flex justify-center mt-4">
+              <div class="border-dashed border-2 border-gray-500 rounded-xl hover:bg-gray-200 cursor-pointer" @click="openUrl(insta_url)">
+              <!-- Include the SVG here -->
+              <div class="flex items-center my-1 mx-2">
+              <Instagram color="#374151" width="40" height="40" />
+              <a href="https://www.instagram.com/phoenix_6018_storage/" target="_blank"
+                class="ml-4 text-blue-500 hover:text-blue-600">
+                @phoenix_6018_storage
+              </a>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
       </section>
@@ -44,7 +58,7 @@
       </div>
     </section>
 
-    <hr class="my-8">    
+    <hr class="my-8">
 
     <!-- Third Section for image gallery -->
     <section class="bg-white text-center">
@@ -67,15 +81,18 @@
 <script>
 import image from "@/assets/UnitsWithVan.png"
 import ImageModal from "@/components/ImageModal.vue"
+import Instagram from "@/components/svg/Instagram.vue"
 
 export default {
   components: {
-    ImageModal
+    ImageModal,
+    Instagram,
   },
   data: function () {
     return {
       image: image,
       agreement: 'Phoenix6018 Rental Agreement.pdf',
+      insta_url: 'https://www.instagram.com/phoenix_6018_storage/',
       imageUrls: [],
       selectedImage: null,
       isModalOpen: false,
@@ -89,6 +106,9 @@ export default {
   methods: {
     downloadLegal() {
       const url = this.agreementUrl;
+      window.open(url, '_blank');
+    },
+    openUrl(url) {
       window.open(url, '_blank');
     },
     openModal(imageUrl) {
