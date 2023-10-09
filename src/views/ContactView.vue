@@ -27,7 +27,7 @@
           <h2 class="text-2xl font-semibold mb-4">Contact Details</h2>
           <!-- List of contact details using v-for loop -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div v-for="(person, index) in people" :key="index" class="bg-gray-800 text-white p-4 rounded-md">
+            <div v-for="(person, index) in people" :key="index" class="bg-white text-black border-solid border-2 p-4 rounded-md">
               <strong>Name:</strong> {{ person.name }}<br />
               <strong>Phone:</strong> {{ person.number }}<br />
               <strong>Email:</strong> {{ person.email }}
