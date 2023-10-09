@@ -80,7 +80,7 @@ export default {
   },
   computed: {
     agreementUrl: function () {
-      return window.location.origin + '/files/' + this.agreement;
+      return window.location.origin + '/phoenix-website/files/' + this.agreement;
     }
   },
   methods: {
