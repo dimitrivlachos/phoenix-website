@@ -65,7 +65,7 @@ export default {
                 // Send email using EmailJS
                 const templateParams = {
                     from_name: this.formData.name,
-                    to_name: 'Phoenix team', // Replace with recipient's name
+                    email: this.formData.email,
                     message: this.formData.message,
                 };
 
