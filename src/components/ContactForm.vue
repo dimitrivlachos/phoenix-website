@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white p-8 shadow-md rounded-md w-full md:w-1/2 my-4">
+    <div class="bg-white p-8 shadow-md rounded-md w-full max-w-screen-md aspect-video mx-auto my-4">
         <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
 
         <!-- Form -->
