@@ -6,14 +6,11 @@
             <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center">Where to find us</h1>
             <p class="text-white z-10 relative text-center p-4 font-bold">Blue Hills, Midrand</p>
             <!-- Flex container to center the map -->
-            <div class="flex items-center justify-center z-10 relative">
-                <!-- Place your map component or image here -->
-                <div class="text-center">
-                    <!-- Example: Google Maps Embed -->
-                    <iframe class="border-4 border-gray-800 rounded-md"
+            <div class="flex items-center justify-center z-10 relative w-full max-w-screen-md aspect-video mx-auto">
+                    <!-- Google Maps Embed -->
+                    <iframe class="border-4 border-gray-800 rounded-md w-full h-full"
                         src="https://www.google.com/maps/embed/v1/view?zoom=14&center=-25.9474%2C28.0918&key=AIzaSyByhNS7f8tv2TpDukN0leRmlvPOtBdM-f0"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
@@ -30,7 +27,7 @@
           <h2 class="text-2xl font-semibold mb-4">Contact Details</h2>
           <!-- List of contact details using v-for loop -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div v-for="(person, index) in people" :key="index" class="bg-gray-800 text-white p-4 rounded-md">
+            <div v-for="(person, index) in people" :key="index" class="bg-white text-black border-solid border-2 p-4 rounded-md">
               <strong>Name:</strong> {{ person.name }}<br />
               <strong>Phone:</strong> {{ person.number }}<br />
               <strong>Email:</strong> {{ person.email }}
