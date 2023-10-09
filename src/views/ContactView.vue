@@ -4,7 +4,7 @@
         <section class="relative bg-cover bg-center p-4" :style="{ backgroundImage: 'url(' + image + ')' }">
             <div class="absolute inset-0 bg-gray-800 opacity-50 z-0"></div>
             <h1 class="text-3xl md:text-5xl text-white z-10 relative text-center">Where to find us</h1>
-            <p class="text-white z-10 relative text-center p-4 font-bold">Blue Hills, Midrand</p>
+            <p class="text-white text-3xl underline z-10 relative text-center p-4 font-bold">Blue Hills, Midrand</p>
             <!-- Flex container to center the map -->
             <div class="flex items-center justify-center z-10 relative w-full max-w-screen-md aspect-video mx-auto">
                     <!-- Google Maps Embed -->
