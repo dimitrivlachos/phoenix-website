@@ -20,22 +20,25 @@
           <div class="md:w-1/2 p-6">
             <h2 class="text-2xl font-semibold">Why Choose Phoenix?</h2>
             <p class="mt-4 text-gray-700">
-              We provide a safe, secure, and convenient storage solutions in the heart of Blue Hills, Midrand.
+              We provide a safe, secure, and convenient storage solution in the heart of Blue Hills, Midrand.
+            </p>
+            <p class="mt-4 text-gray-700">
+              Spacious and clean, our storage units are designed to accommodate all your storage needs. Whether it's
+              household goods, business inventory, or furniture, we have the space for you!
             </p>
           </div>
 
           <div class="md:w-1/2 p-6">
             <h2 class="text-2xl font-semibold">Discover Your Perfect Storage Solution</h2>
             <p class="mt-4 text-gray-700">
-              Spacious and clean, our storage units are designed to accommodate all your storage needs. Whether it's
-              household goods, business inventory, or furniture, we have the space for you!
+              Our units are 4m x 4m in size, with a 2m high ceiling. This means you get 16m<sup>2</sup> of storage space.
             </p>
 
           </div>
         </div>
       </section>
       <div class="mt-6">
-        <a @click="downloadLegal" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+        <a @click="downloadLegal" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer">
           Download Rental Agreement
         </a>
       </div>
