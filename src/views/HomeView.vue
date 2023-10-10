@@ -41,10 +41,9 @@
               <!-- Include the SVG here -->
               <div class="flex items-center my-1 mx-2">
               <Instagram color="#374151" width="40" height="40" />
-              <a href="https://www.instagram.com/phoenix_6018_storage/" target="_blank"
-                class="ml-4 text-blue-500 hover:text-blue-600">
+              <p class="ml-4 text-blue-500 hover:text-blue-600">
                 @phoenix_6018_storage
-              </a>
+              </p>
             </div>
             </div>
             </div>
