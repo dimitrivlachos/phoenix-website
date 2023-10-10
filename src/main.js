@@ -6,8 +6,8 @@ import router from "./router";
 import VueGtag from "vue-gtag";
 
 createApp(App).use(router).use(VueGtag, {
-    config: { id: "G-H7GMWHW01W" },
-    appName: "Phoenix Website",
+    config: { id: "G-C2J0F5J9DR" },
+    appName: "Phoenix Website Live",
     pageTrackerScreenviewEnabled: true,
     }).mount("#app");
 
