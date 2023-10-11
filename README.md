@@ -1,19 +1,9 @@
-# phoenix-website
+# Official Phoenix Website
 
-## Project setup
-```
-npm install
-```
+This is a website I built for a small business in my area. It is a single page application built with Vue.js and Tailwind CSS.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+It is meant to be a simple and informative website that is easy to navigate and provides all the necessary information about the business.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+The development site can be found at: [https://dimitrivlachos.github.io/phoenix-website/](https://dimitrivlachos.github.io/phoenix-website/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+And the live site can be found at: [https://phoenix6018.co.za/](https://phoenix6018.co.za/)
