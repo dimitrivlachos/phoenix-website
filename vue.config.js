@@ -3,8 +3,9 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/phoenix-website/'
-    : '/'
-}
+// Public path ignored for self-hosted deployment
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? '/phoenix-website/'
+//     : '/'
+// }
